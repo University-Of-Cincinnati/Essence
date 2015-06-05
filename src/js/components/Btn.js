@@ -1,13 +1,10 @@
 'use strict';
 
 var React = require('react/addons'),
-    ClassNames = require('../utils/ClassNames'),
     classSet = React.addons.classSet;
 
 module.exports = React.createClass({
     displayName: 'Btn',
-
-    mixins: [ClassNames],
 
     getInitialState: function() {
       return {
@@ -34,7 +31,7 @@ module.exports = React.createClass({
 
     componentWillReceiveProps: function () {
       var self = this;
-      //self.renderChildren();
+      self.renderChildren();
     },
 
     render: function () {

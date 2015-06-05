@@ -1,26 +1,14 @@
 'use strict';
 
-var React = require('react/addons'),
-    Text = require('./Text'),
-    PubSub = require('../utils/PubSub');
+var React = require('react/addons');
 
 module.exports = React.createClass({
     displayName: 'ToolBar',
-
-    mixins: [PubSub],
 
     getInitialState: function() {
       return {
         children: []
       };
-    },
-
-    componentDidMount: function () {
-      // Empty
-    },
-
-    componentDidUnmount: function () {
-      // Empty
     },
 
     renderChildren: function () {
@@ -55,7 +43,7 @@ module.exports = React.createClass({
     renderTitle: function () {
       if (this.props.title) {
         return (
-          <Text text={this.props.title} />
+          <span>{this.props.title}</span>
         );
       }
 

@@ -2,20 +2,19 @@
 
 var React = require('react/addons'),
     Icon = require('./Icon'),
-    Mobile = require('../utils/Mobile'),
-    PubSub = require('../utils/PubSub'),
-    ComponentHTML = require('../utils/ComponentHTML'),
+    Utils = require('../utils'),
+    PubSub = require('../mixins/PubSub'),
     classSet = React.addons.classSet;
 
 module.exports = React.createClass({
     displayName: 'Navigation',
 
-    mixins: [PubSub, Mobile],
+    mixins: [PubSub],
 
     getInitialState: function() {
       return {
         children: [],
-        isMobile: this.isMobile() ? "e-nav-drawer" : "e-nav-drawer",
+        isMobile: Utils.mobile.isMobile() ? "e-nav-drawer" : "e-nav-drawer",
         classes: {
           'e-main': false,
           'e-navigation-open': false,
@@ -25,8 +24,8 @@ module.exports = React.createClass({
     },
 
     componentDidMount: function () {
-      var self = this,
-          currentWidth = window.outerWidth;
+      /*
+      var self = this;
 
       if (self.props.live) {
         // Load HomePage
@@ -37,6 +36,7 @@ module.exports = React.createClass({
         self.subscribe('showNavigationComponent', this.showNavigationComponent);
         self.subscribe('hideNavigation', this.hideNavigation);
       }
+      */
     },
 
     componentDidUnmount: function () {
@@ -107,8 +107,7 @@ module.exports = React.createClass({
           <img
             className="nav-logo"
             alt={logoAlt}
-            src={self.props.logo}
-          />
+            src={self.props.logo}/>
         );
       }
 
@@ -128,12 +127,12 @@ module.exports = React.createClass({
       document.querySelector('body').className = 'e-navigation-open';
     },
 
-    showNavigationComponent: function (data) {
+    /*showNavigationComponent: function (data) {
       var self = this;
       if (self.props.live && data.target.id) {
         ComponentHTML.set(data.target.id);
       }
-    },
+    },*/
 
     hideNavigation: function () {
       var self = this,

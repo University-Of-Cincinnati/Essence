@@ -1,16 +1,14 @@
 'use strict';
 
 var React = require('react/addons'),
-    Icon = require('./Icon'),
-    Mobile = require('../utils/Mobile'),
-    PubSub = require('../utils/PubSub'),
-    ClassNames = require('../utils/ClassNames'),
+    PubSub = require('../mixins/PubSub'),
+    Utils = require('../utils'),
     classSet = React.addons.classSet;
 
 module.exports = React.createClass({
     displayName: 'NavigationFooter',
 
-    mixins: [PubSub, ClassNames],
+    mixins: [PubSub],
 
     getInitialState: function() {
       return {
@@ -24,7 +22,7 @@ module.exports = React.createClass({
       var self = this,
           classes = self.state.classes;
 
-      classes = ClassNames(classes, self.props.classes);
+      classes = Utils.classNames(classes, self.props.classes);
 
       self.setState({
         classes: classSet(classes)

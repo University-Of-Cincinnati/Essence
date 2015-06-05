@@ -2,7 +2,7 @@
 
 var React = require('react/addons'),
     classSet = React.addons.classSet,
-    PubSub = require('../utils/PubSub');
+    PubSub = require('../mixins/PubSub');
 
 module.exports = React.createClass({
     displayName: 'ChipItem',
@@ -31,8 +31,8 @@ module.exports = React.createClass({
 
       return (
         <div className={"e-chip-image e-left"}>
-          <img 
-            src={imageSrc} 
+          <img
+            src={imageSrc}
             alt={imageAlt}
             onClick={self.setClick}
             onTouch={self.setClick}  />
@@ -48,13 +48,13 @@ module.exports = React.createClass({
       if (self.props.name) {
         return (
           <div className={"e-chip-text e-left"}>
-            <span 
+            <span
               onClick={self.setClick}
-              onTouch={self.setClick} 
+              onTouch={self.setClick}
               className={"e-chip-name"}>
               {self.props.name}
             </span>
-            <span 
+            <span
               onClick={self.setClick}
               onTouch={self.setClick}
               className={"e-chip-adress"}>

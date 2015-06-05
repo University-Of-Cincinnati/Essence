@@ -2,18 +2,17 @@
 
 var React = require('react/addons'),
     classSet = React.addons.classSet,
-    PositionHorizontal = require('../utils/PositionHorizontal'),
-    Mobile = require('../utils/Mobile'),
-    PubSub = require('../utils/PubSub');
+    Utils = require('../utils'),
+    PubSub = require('../mixins/PubSub');
 
 module.exports = React.createClass({
     displayName: 'SliderItem',
 
-    mixins: [PubSub, Mobile, PositionHorizontal],
+    mixins: [PubSub],
 
     getInitialState: function() {
       return {
-        isMobile: this.isMobile(),
+        isMobile: Utils.mobile.isMobile(),
         isMoving: false,
         isHidden: '',
         classes: {
@@ -69,8 +68,6 @@ module.exports = React.createClass({
           discreteStyles = self.state.discreteStyles,
           clientX = (self.state.isMobile) ?
               event.changedTouches[0].clientX : event.clientX,
-          element = this.refs.sliderHandle.getDOMNode(),
-          //elementBounding = element.getBoundingClientRect(),
           sliderParent = this.refs.sliderParent.getDOMNode(),
           offset = clientX - sliderParent.offsetParent.offsetLeft,
           horizontal = ((offset / sliderParent.offsetWidth ) * 100).toFixed(0),

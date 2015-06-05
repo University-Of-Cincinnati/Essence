@@ -1,15 +1,14 @@
 'use strict';
 
 var React = require('react/addons'),
-    Mobile = require('../utils/Mobile'),
-    PubSub = require('../utils/PubSub'),
-    ClassNames = require('../utils/ClassNames'),
+    PubSub = require('../mixins/PubSub'),
+    Utils = require('../utils'),
     classSet = React.addons.classSet;
 
 module.exports = React.createClass({
     displayName: 'List',
 
-    mixins: [PubSub, Mobile, ClassNames],
+    mixins: [PubSub],
 
     getInitialState: function() {
       return {
@@ -43,7 +42,7 @@ module.exports = React.createClass({
       }
 
       if (self.props.classes) {
-        classes = ClassNames(classes, self.props.classes);
+        classes = Utils.classNames(classes, self.props.classes);
       }
 
       classes['has-icon'] = (self.props.icon) ? true : false;

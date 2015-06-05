@@ -1,16 +1,12 @@
 'use strict';
 
 var React = require('react/addons'),
-    ClassNames = require('../utils/ClassNames'),
-    DateFormat = require('../utils/DateFormat'),
-    Text = require('./Text'),
+    Utils = require('../utils'),
     Icon = require('./Icon'),
     classSet = React.addons.classSet;
 
 module.exports = React.createClass({
     displayName: 'DatePickerContent',
-
-    mixins: [ClassNames, DateFormat],
 
     getInitialState: function() {
       var d = new Date();
@@ -28,7 +24,7 @@ module.exports = React.createClass({
     componentDidMount: function () {
       var classes = this.state.classes || [];
 
-      classes = ClassNames(classes, this.props.classes);
+      classes = Utils.classNames(classes, this.props.classes);
 
       this.setState({
         classes: classes
@@ -113,25 +109,25 @@ module.exports = React.createClass({
 
     renderNavigation: function () {
       var self = this,
-          month = DateFormat('month', self.state.currentDate.getMonth()),
+          month = Utils.dateFormat('month', self.state.currentDate.getMonth()),
           year = self.state.currentDate.getFullYear();
       return (
         <div className={'e-picker-calendar-slider'}>
-          <Text classes={'e-picker-selected-month'}>{month}</Text>
-          <Text> </Text>
-          <Text classes={'e-picker-selected-year'}>{year}</Text>
-          <Text
-            classes={'simple-button e-picker-control left'}
+          <span className={'e-picker-selected-month'}>{month}</span>
+          <span> </span>
+          <span className={'e-picker-selected-year'}>{year}</span>
+          <span
+            className={'simple-button e-picker-control left'}
             onClick={self._prevMonth}
           >
             <Icon name='navigation-chevron-left' />
-          </Text>
-          <Text
-            classes={'simple-button e-picker-control right'}
+          </span>
+          <span
+            className={'simple-button e-picker-control right'}
             onClick={self._nextMonth}
           >
             <Icon name='navigation-chevron-right' />
-          </Text>
+          </span>
         </div>
       );
     },
@@ -145,8 +141,8 @@ module.exports = React.createClass({
               isActive = (currentDay.getDate() === self.state.dateSelected) ? " active" : "",
               newDate = {
                 day: currentDay.getDate(),
-                dayName: DateFormat('day', currentDay.getDay()),
-                month: DateFormat('month', currentDay.getMonth()),
+                dayName: Utils.dateFormat('day', currentDay.getDay()),
+                month: Utils.dateFormat('month', currentDay.getMonth()),
                 year: currentDay.getFullYear()
               };
 
@@ -156,9 +152,7 @@ module.exports = React.createClass({
               className={"e-picker-calendar-week-date" + isActive}
               onClick={self._setActive.bind(this, newDate)}
             >
-              <button
-              className={'simple-button'}
-              >
+              <button className={'simple-button'}>
                 {currentDay ? currentDay.getDate() : currentDay}
               </button>
             </div>
@@ -167,8 +161,7 @@ module.exports = React.createClass({
           return (
             <div
               key={index}
-              className={"e-picker-calendar-week-date"}
-            />
+              className={"e-picker-calendar-week-date"}/>
           );
         }
       }, this);

@@ -3,6 +3,7 @@
   "version": "0.0.3",
   "description": "UC fork of essence - basic material design UI framework",
   "private": false,
+  "main": "./dist/js/essence.js",
   "keywords": [
     "essence",
     "react",
@@ -70,4 +71,7 @@
   "_from": "git://github.com/University-Of-Cincinnati/Essence",
   "_resolved": "git://github.com/University-Of-Cincinnati/Essence#fdbd9d0442683895ea67df918cbe316f5ce63acb",
   "_fromGithub": true
+  "dependencies": {
+    "react": "^0.13.3"
+  }
 }
