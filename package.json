@@ -17,6 +17,7 @@
     "type": "git",
     "url": "https://github.com/University-Of-Cincinnati/Essence.git"
   },
+  "homepage": "https://github.com/University-Of-Cincinnati/Essence",
   "paths": {
     "root": ".",
     "src": "./src",
