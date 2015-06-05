@@ -70,7 +70,7 @@
   "_shasum": "cbb69fe33e608c5f2b50c57d6e72ff5b84b29d82",
   "_from": "git://github.com/University-Of-Cincinnati/Essence",
   "_resolved": "git://github.com/University-Of-Cincinnati/Essence#fdbd9d0442683895ea67df918cbe316f5ce63acb",
-  "_fromGithub": true
+  "_fromGithub": true,
   "dependencies": {
     "react": "^0.13.3"
   }
