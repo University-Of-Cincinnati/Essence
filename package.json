@@ -1,6 +1,6 @@
 {
   "name": "uc-essence",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "UC fork of essence - basic material design UI framework",
   "private": false,
   "main": "./dist/js/essence.js",
@@ -66,7 +66,7 @@
   "gitHead": "fdbd9d0442683895ea67df918cbe316f5ce63acb",
   "readme": "#[Essence](http://essence.pearlhq.com/) - The Essential Material Design Framework\n\n## About Essence\nEssence is a CSS framework that implements the guidelines from [Google Material Design Specification](https://www.google.com/design/spec/material-design/introduction.html) using Facebook's [react.js library](https://facebook.github.io/react/). Use it to easily build super-fast and great looking web & mobile interfaces.\n\nSee [here](http://essence.pearlhq.com/) what you can build with Essence and how to do it. We've got several examples that will help you get started.\n\n## About Us\nWe are a team of front end developers with extensive experience in building highly desirable products for both large companies and startups alike here at [Pearl HQ](http://www.pearlhq.com/).\n\nWe're very fond of our UI/UX craft and we're constantly creating tools that allow us to work smarter and faster. Essence is one of those tools and we're happy to release it as open-source.\n\n### License\nEssence is [MIT licensed](./LICENSE).\n\nEssence documentation is [Creative Commons licensed](./LICENSE-docs).\n\n### TO DO - Tasks\n- [x] Essence Native NPM Package\n- [ ] Essence NPM Package\n- [ ] Essence Bower Package\n- [ ] Essence Native Bower Package\n- [ ] Essence test suite\n- [ ] style inline option for Essence components\n",
   "readmeFilename": "README.md",
-  "_id": "essence@0.0.1",
+  "_id": "uc-essence@0.0.4",
   "_shasum": "cbb69fe33e608c5f2b50c57d6e72ff5b84b29d82",
   "_from": "git://github.com/University-Of-Cincinnati/Essence",
   "_resolved": "git://github.com/University-Of-Cincinnati/Essence#fdbd9d0442683895ea67df918cbe316f5ce63acb",
