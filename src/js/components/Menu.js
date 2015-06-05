@@ -171,7 +171,7 @@ module.exports = React.createClass({
           options = self.props.items ? self.props.items[0] : false;
 
       self.setState({
-        isHidden: options.hide
+      //  isHidden: options.hide
       });
     },
 
