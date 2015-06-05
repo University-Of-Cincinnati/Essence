@@ -1,8 +1,8 @@
 {
-  "name": "essence",
-  "version": "0.0.1",
+  "name": "uc-essence",
+  "version": "0.0.2",
   "description": "essence - basic material design UI framework",
-  "private": true,
+  "private": false,
   "keywords": [
     "essence",
     "react",
