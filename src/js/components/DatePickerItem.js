@@ -3,7 +3,7 @@
 var React = require('react/addons'),
     PubSub = require('../mixins/PubSub'),
     Utils = require('../utils'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'DatePickerItem',

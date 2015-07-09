@@ -1,7 +1,7 @@
 'use strict';
 
 var React = require('react/addons'),
-    classSet = React.addons.classSet,
+    classSet = require('classnames'),
     Utils = require('../utils'),
     PubSub = require('../mixins/PubSub');
 

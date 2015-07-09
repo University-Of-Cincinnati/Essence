@@ -1,7 +1,7 @@
 'use strict';
 
 var React = require('react/addons'),
-    classSet = React.addons.classSet,
+    classSet = require('classnames'),
     Icon = require('./Icon'),
     MenuItem = require('./MenuItem'),
     PubSub = require('../mixins/PubSub'),

@@ -2,7 +2,7 @@
 
 var React = require('react/addons'),
     PubSub = require('../mixins/PubSub'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'Text',

@@ -1,7 +1,7 @@
 'use strict';
 
 var React = require('react/addons'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'Block',

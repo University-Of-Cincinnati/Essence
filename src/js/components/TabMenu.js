@@ -5,9 +5,9 @@ var React = require('react/addons'),
     PubSub = require('../mixins/PubSub'),
     Highlighter = require('./Highlighter'),
     Utils = require('../utils'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
-var classSet = React.addons.classSet;
+var classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'TabMenu',

@@ -20477,7 +20477,7 @@ module.exports = React.createClass({
 var React = require('react/addons'),
     PubSub = require('../utils/PubSub'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'Text',
@@ -20617,7 +20617,7 @@ module.exports = React.createClass({
 'use strict';
 
 var React = require('react/addons'),
-    classSet = React.addons.classSet,
+    classSet = require('classnames'),
     PubSub = require('../utils/PubSub');
 
 module.exports = React.createClass({
@@ -20722,7 +20722,7 @@ module.exports = React.createClass({
 
 var React = require('react/addons'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'Btn',
@@ -20780,7 +20780,7 @@ var React = require('react/addons'),
     ClassNames = require('../utils/ClassNames'),
     ClickPosition = require('../utils/ClickPosition'),
     BackgroundColor = require('../utils/BackgroundColor'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'BtnItem',
@@ -20981,7 +20981,7 @@ module.exports = React.createClass({
 var React = require('react/addons'),
     PubSub = require('../utils/PubSub'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'CardItem',
@@ -21160,7 +21160,7 @@ module.exports = React.createClass({
 
 var React = require('react/addons'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'CardItemContent',
@@ -21202,7 +21202,7 @@ module.exports = React.createClass({
 
 var React = require('react/addons'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'CardItemFooter',
@@ -21245,7 +21245,7 @@ module.exports = React.createClass({
 
 var React = require('react/addons'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'CardItemHeader',
@@ -21287,7 +21287,7 @@ module.exports = React.createClass({
 'use strict';
 
 var React = require('react/addons'),
-    classSet = React.addons.classSet,
+    classSet = require('classnames'),
     PubSub = require('../utils/PubSub');
 
 module.exports = React.createClass({
@@ -21386,7 +21386,7 @@ module.exports = React.createClass({
 'use strict';
 
 var React = require('react/addons'),
-    classSet = React.addons.classSet,
+    classSet = require('classnames'),
     PubSub = require('../utils/PubSub');
 
 module.exports = React.createClass({
@@ -24728,7 +24728,7 @@ var React = require('react/addons'),
     PubSub = require('../utils/PubSub'),
     ClassNames = require('../utils/ClassNames'),
     DateFormat = require('../utils/DateFormat'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'DatePicker',
@@ -24871,7 +24871,7 @@ var React = require('react/addons'),
     DateFormat = require('../utils/DateFormat'),
     Text = require('./Text'),
     Icon = require('./Icon'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'DatePickerContent',
@@ -25100,7 +25100,7 @@ module.exports = React.createClass({
 
 var React = require('react/addons'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'DatePickerFooter',
@@ -25148,7 +25148,7 @@ var React = require('react/addons'),
     PubSub = require('../utils/PubSub'),
     ClassNames = require('../utils/ClassNames'),
     DateFormat = require('../utils/DateFormat'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'DatePickerHeader',
@@ -25272,7 +25272,7 @@ module.exports = React.createClass({
 var React = require('react/addons'),
     PubSub = require('../utils/PubSub'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'DatePickerHeaderDate',
@@ -25385,7 +25385,7 @@ module.exports = React.createClass({
 
 var React = require('react/addons'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'DatePickerHeaderDay',
@@ -25428,7 +25428,7 @@ module.exports = React.createClass({
 var React = require('react/addons'),
     PubSub = require('../utils/PubSub'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'DatePickerItem',
@@ -25517,7 +25517,7 @@ var React = require('react/addons'),
     Mobile = require('../utils/Mobile'),
     PubSub = require('../utils/PubSub'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'DialogItem',
@@ -25638,7 +25638,7 @@ module.exports = React.createClass({
 var React = require('react/addons'),
     Mobile = require('../utils/Mobile'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'DialogItemContent',
@@ -25681,7 +25681,7 @@ module.exports = React.createClass({
 var React = require('react/addons'),
     Mobile = require('../utils/Mobile'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'DialogItemFooter',
@@ -25724,7 +25724,7 @@ module.exports = React.createClass({
 var React = require('react/addons'),
     Mobile = require('../utils/Mobile'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'DialogItemHeader',
@@ -25766,7 +25766,7 @@ module.exports = React.createClass({
 
 var React = require('react/addons'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'Divider',
@@ -25861,7 +25861,7 @@ module.exports = React.createClass({
 
 var React = require('react/addons'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'Icon',
@@ -25902,7 +25902,7 @@ module.exports = React.createClass({
 
 var React = require('react/addons'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'Image',
@@ -25994,7 +25994,7 @@ module.exports = React.createClass({
 var React = require('react/addons'),
     PubSub = require('../utils/PubSub'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'InputItem',
@@ -26197,7 +26197,7 @@ var React = require('react/addons'),
     Mobile = require('../utils/Mobile'),
     PubSub = require('../utils/PubSub'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'List',
@@ -26346,7 +26346,7 @@ var React = require('react/addons'),
     ClickPosition = require('../utils/ClickPosition'),
     BackgroundColor = require('../utils/BackgroundColor'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'ListItem',
@@ -26919,7 +26919,7 @@ module.exports = React.createClass({
 var React = require('react/addons'),
     PubSub = require('../utils/PubSub'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'ListItemElement',
@@ -26980,7 +26980,7 @@ module.exports = React.createClass({
 'use strict';
 
 var React = require('react/addons'),
-    classSet = React.addons.classSet,
+    classSet = require('classnames'),
     Text = require('./Text'),
     Icon = require('./Icon'),
     BtnItem = require('./BtnItem'),
@@ -27264,11 +27264,11 @@ module.exports = React.createClass({
 'use strict';
 
 var React = require('react/addons'),
-    classSet = React.addons.classSet,
+    classSet = require('classnames'),
     Mobile = require('../utils/Mobile'),
     PubSub = require('../utils/PubSub'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'MenuItem',
@@ -27467,7 +27467,7 @@ var React = require('react/addons'),
     Mobile = require('../utils/Mobile'),
     PubSub = require('../utils/PubSub'),
     ComponentHTML = require('../utils/ComponentHTML'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'Navigation',
@@ -27689,7 +27689,7 @@ module.exports = React.createClass({
 
 var React = require('react/addons'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'Paper',
@@ -27760,7 +27760,7 @@ module.exports = React.createClass({
 
 var React = require('react/addons'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'PaperItem',
@@ -27980,7 +27980,7 @@ module.exports = React.createClass({
 'use strict';
 
 var React = require('react/addons'),
-    classSet = React.addons.classSet,
+    classSet = require('classnames'),
     PositionHorizontal = require('../utils/PositionHorizontal'),
     Mobile = require('../utils/Mobile'),
     PubSub = require('../utils/PubSub');
@@ -28244,7 +28244,7 @@ var React = require('react/addons'),
     BtnItem = require('./BtnItem'),
     PubSub = require('../utils/PubSub'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'SnackbarItem',
@@ -28388,7 +28388,7 @@ module.exports = React.createClass({
 'use strict';
 
 var React = require('react/addons'),
-    classSet = React.addons.classSet,
+    classSet = require('classnames'),
     PubSub = require('../utils/PubSub'),
     ClassNames = require('../utils/ClassNames');
 
@@ -28535,7 +28535,7 @@ module.exports = React.createClass({
 var React = require('react/addons'),
     PubSub = require('../utils/PubSub'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'TabItem',
@@ -28667,9 +28667,9 @@ var React = require('react/addons'),
     PubSub = require('../utils/PubSub'),
     Highlighter = require('./Highlighter'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
-var classSet = React.addons.classSet;
+var classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'TabMenu',
@@ -28843,7 +28843,7 @@ module.exports = React.createClass({
 var React = require('react/addons'),
     PubSub = require('../utils/PubSub'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'Text',
@@ -29159,7 +29159,7 @@ var React = require('react/addons'),
     BtnItem = require('./BtnItem'),
     PubSub = require('../utils/PubSub'),
     ClassNames = require('../utils/ClassNames'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'ToastItem',

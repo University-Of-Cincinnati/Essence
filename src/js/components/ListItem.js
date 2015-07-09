@@ -5,7 +5,7 @@ var React = require('react/addons'),
     ListItemElement = require('./ListItemElement'),
     PubSub = require('../mixins/PubSub'),
     Utils = require('../utils'),
-    classSet = React.addons.classSet;
+    classSet = require('classnames');
 
 module.exports = React.createClass({
     displayName: 'ListItem',
